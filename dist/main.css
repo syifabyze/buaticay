@@ -1,0 +1,211 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+.sec-mob {display: none;}
+
+/* Custom CSS
+ * --------------------------------------- */
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 2em;
+	}
+}
+
+.loader-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #e0ae22;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .loader {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border: 4px solid #111;
+	animation: loader 2s infinite ease;
+  }
+
+  .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #111;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+body{
+	color: #333;
+	color: rgba(0,0,0,0.5);
+	font-family: 'Montserrat', sans-serif;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 3.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 2.7em;
+}
+#head, #days-count {
+	background-color: #111;
+	color: #e0ae22;
+}
+#days-count h1, #days-count h2 {
+	color: #ffffff;
+}
+.padlr {
+	padding-left: 20%;
+	padding-right: 20%;
+	background-color: #e0ae22;
+}
+.btn-secondary {
+	background-color: #222;
+	border-radius: 15px;
+	border: 0px;
+}
+#playSong {
+	color: #fff;
+}
+#head h1 {
+	color: #fff;
+}
+#friend-wish-b, #friend-wish {
+	background-color: #e0ae22;
+}
+#wish-epan, #wish-epan-b, #memo, #foot, .mems {
+	background-color: #edbc32;
+}
+#head p, #foot p, #friend-wish-b p {
+	margin: 1em 10em 0 10em;
+}
+#head p span {
+	font-size: .6em
+}
+p{
+	font-size: 1.5em;
+}
+.section {
+	text-align: center;
+	background-size: cover;
+}
+.fa-heart-o {
+	color: red;
+}
+a#scrollTop {
+	transition: .3s;
+	text-decoration: underline;
+}
+a#scrollTop:focus {text-decoration: none;}
+a#scrollTop p{
+	font-size: 1em;
+	color: #000;
+	opacity: .3;
+}
+a#scrollTop:hover {
+	opacity: .6;
+}
+.wish {
+	width: 100%;
+	padding: 40px;
+	text-align: center;
+}
+.wsh h2, .wsh p {
+	color: #fff;
+}
+.wish p {
+	margin-top: 8px;
+	font-size: 1em;
+}
+#days-count p, #memo p {
+	font-size: 1em;
+}
+#days-count {
+	padding-left: 120px;
+	padding-right: 120px;
+}
+
+
+.mems img, .mems video {
+	width: 100%;
+}
+.mems video {
+	height: 635px;
+}
+
+.mems {
+	text-align: left;
+}
+.mems p {
+	font-size: 1.2em;
+}
