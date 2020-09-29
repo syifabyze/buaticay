@@ -1,2 +1,0 @@
-Buaticay
-For you Icay!
